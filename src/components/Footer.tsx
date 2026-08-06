@@ -35,14 +35,14 @@ export default function Footer({ onScrollToSection, onOpenVideoPackager }: Foote
         <div className="flex flex-col items-center justify-center py-10 border-b border-neutral-900/60">
           <button
             onClick={handleBackToTop}
-            className="group flex flex-col items-center gap-3 px-8 py-5 rounded-full bg-neutral-900/80 hover:bg-white text-white hover:text-black border border-neutral-800 hover:border-white transition-all duration-300 shadow-xl hover:shadow-[0_0_30px_rgba(255,255,255,0.3)] transform hover:-translate-y-1"
+            className="group flex flex-col items-center gap-3 px-8 py-5 rounded-full bg-transparent hover:bg-neutral-900/50 text-neutral-300 hover:text-white border border-neutral-800 hover:border-neutral-600 transition-all duration-300 transform hover:-translate-y-1 cursor-pointer"
           >
-            <div className="w-10 h-10 rounded-full border border-neutral-700 group-hover:border-black flex items-center justify-center transition-colors">
-              <ArrowUp className="w-5 h-5 group-hover:-translate-y-1 transition-transform duration-300" />
+            <div className="w-10 h-10 rounded-full border border-neutral-800 group-hover:border-neutral-500 flex items-center justify-center transition-colors">
+              <ArrowUp className="w-5 h-5 text-neutral-400 group-hover:text-white group-hover:-translate-y-1 transition-all duration-300" />
             </div>
             <div className="flex flex-col items-center">
               <span className="text-sm font-bold tracking-wider uppercase font-sans">回到首页</span>
-              <span className="text-[10px] font-mono text-neutral-400 group-hover:text-neutral-700 tracking-[0.2em]">BACK TO TOP</span>
+              <span className="text-[10px] font-mono text-neutral-500 group-hover:text-neutral-300 tracking-[0.2em]">BACK TO TOP</span>
             </div>
           </button>
         </div>

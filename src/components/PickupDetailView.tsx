@@ -96,12 +96,12 @@ export default function PickupDetailView({ detail, heroVideoUrl, onResetAll }: P
       const saved = localStorage.getItem('pickup_hero_media');
       if (saved) {
         const parsed = JSON.parse(saved);
-        if (parsed && parsed.url) {
+        if (parsed && parsed.url && parsed.url !== '') {
           return parsed;
         }
       }
     } catch {}
-    return { type: 'video', url: '' };
+    return { type: 'video', url: 'https://a566e28db74b41bebfdfab6ad1c9bbff.gz2.agentos-app.net/video5.mp4' };
   });
 
   // Concept A Cover Media

@@ -223,10 +223,10 @@ export default function SpecsSection({ model }: SpecsSectionProps) {
 
       {/* Editorial About Me Intro Panel: Full Width to align image to the very left edge of the page */}
       <motion.div
-        initial={{ opacity: 0, y: 40 }}
+        initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: '-40px' }}
-        transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+        transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
         className="w-full border-b border-neutral-900/60 relative z-10 mb-24"
       >
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-0 items-stretch">

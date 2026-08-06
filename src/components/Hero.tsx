@@ -244,17 +244,29 @@ export default function Hero({ model, onBuildClick }: HeroProps) {
             </div>
             
             {/* Scroll Trigger Button under DESIGN PORTFOLIO */}
-            <button
+            <motion.button
+              whileHover={{ scale: 1.03, x: 2 }}
+              whileTap={{ scale: 0.95 }}
+              transition={{ type: "spring", stiffness: 350, damping: 18 }}
               onClick={() => {
                 const element = document.getElementById('specs');
                 if (element) {
                   const headerOffset = 70;
                   const elementPosition = element.getBoundingClientRect().top;
-                  const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-                  window.scrollTo({
-                    top: offsetPosition,
-                    behavior: 'smooth'
-                  });
+                  const targetY = elementPosition + window.pageYOffset - headerOffset;
+                  const startY = window.pageYOffset;
+                  const distance = targetY - startY;
+                  const duration = Math.min(1000, Math.max(500, Math.abs(distance) * 0.65));
+                  let startTime: number | null = null;
+                  const easeOutSpring = (t: number) => (t === 1 ? 1 : 1 - Math.pow(2, -10 * t));
+                  const animateScroll = (currentTime: number) => {
+                    if (startTime === null) startTime = currentTime;
+                    const elapsed = currentTime - startTime;
+                    const progress = Math.min(elapsed / duration, 1);
+                    window.scrollTo(0, startY + distance * easeOutSpring(progress));
+                    if (progress < 1) requestAnimationFrame(animateScroll);
+                  };
+                  requestAnimationFrame(animateScroll);
                 }
               }}
               className="group flex flex-col items-start gap-2 mt-5 cursor-pointer focus:outline-none self-start"
@@ -283,7 +295,7 @@ export default function Hero({ model, onBuildClick }: HeroProps) {
                   <ChevronDown className="w-5 h-5 text-neutral-300 group-hover:text-[#753fec] transition-colors duration-300" />
                 </motion.div>
               </div>
-            </button>
+            </motion.button>
           </motion.div>
 
         </div>

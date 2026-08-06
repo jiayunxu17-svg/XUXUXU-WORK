@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { motion, AnimatePresence, useScroll, useTransform } from 'motion/react';
+import { motion, AnimatePresence, useScroll, useTransform, useSpring } from 'motion/react';
 import { Compass, Sparkles, Key } from 'lucide-react';
 import { MODELS } from './data';
 import { CustomizationState } from './types';
@@ -25,11 +25,11 @@ export default function App() {
     interior: 'obsidian'
   });
 
-  // Scroll animations for 3D overlay pop effect
+  // Scroll animations for smooth parallax effect without spring jitter
   const { scrollY } = useScroll();
-  const heroScale = useTransform(scrollY, [0, 600], [1, 0.9]);
-  const heroOpacity = useTransform(scrollY, [0, 600], [1, 0.35]);
-  const heroY = useTransform(scrollY, [0, 600], [0, 80]);
+
+  const heroOpacity = useTransform(scrollY, [0, 400], [1, 0.35]);
+  const heroY = useTransform(scrollY, [0, 500], [0, 50]);
 
   // Find active model details
   const currentModel = MODELS.find(m => m.id === modelId) || MODELS[0];
@@ -86,7 +86,7 @@ export default function App() {
     }
     const element = document.getElementById(sectionId);
     if (element) {
-      const headerOffset = 80;
+      const headerOffset = 70;
       const elementPosition = element.getBoundingClientRect().top;
       const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
 
@@ -177,7 +177,7 @@ export default function App() {
             
             {/* Hero Stage presentation with receding parallax depth */}
             <motion.div 
-              style={{ scale: heroScale, opacity: heroOpacity, y: heroY }}
+              style={{ opacity: heroOpacity, y: heroY }}
               className="sticky top-0 h-screen w-full z-0 overflow-hidden origin-top"
             >
               <Hero
@@ -186,8 +186,10 @@ export default function App() {
               />
             </motion.div>
 
-            {/* Overlapping Sheet Section with 3D pop effect */}
-            <div className="relative z-10 bg-[#0b0b0b] rounded-t-[32px] sm:rounded-t-[48px] border-t border-neutral-800/90 shadow-[0_-30px_100px_rgba(0,0,0,0.95)] overflow-hidden">
+            {/* Overlapping Sheet Section */}
+            <div 
+              className="relative z-10 bg-[#0b0b0b] rounded-t-[32px] sm:rounded-t-[48px] border-t border-neutral-800/90 shadow-[0_-30px_100px_rgba(0,0,0,0.95)] overflow-hidden"
+            >
               {/* Subtle top indicator bar */}
               <div className="w-full flex justify-center pt-3 pb-1">
                 <div className="w-14 h-1 bg-neutral-800 rounded-full opacity-60"></div>

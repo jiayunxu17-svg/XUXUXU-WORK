@@ -150,13 +150,13 @@ export default function ReservationSection({ model, customization }: Reservation
               <div className="relative p-4 bg-white/5 border border-neutral-800 rounded-2xl mt-2 flex flex-col items-center justify-center group-hover:border-[#753fec]/40 transition-colors shadow-2xl">
                 <div className="w-48 h-48 sm:w-52 sm:h-52 rounded-xl overflow-hidden border border-neutral-800 bg-black p-2 relative shadow-inner">
                   <img
-                    src="/wechat_qr_code_1785058386893.png"
+                    src="https://b4ca62ea3b5c48218ab14dbc609f2c16.gz5.agentos-app.net/photo16.jpg"
                     alt="Xu Jiayun WeChat QR Code"
                     onError={(e) => {
                       const target = e.currentTarget;
                       if (!target.dataset.attempt) {
                         target.dataset.attempt = '1';
-                        target.src = '/wechat_qr_code_1785058386893.png';
+                        target.src = 'https://b4ca62ea3b5c48218ab14dbc609f2c16.gz5.agentos-app.net/photo16.jpg';
                       }
                     }}
                     className="w-full h-full object-cover rounded-lg"

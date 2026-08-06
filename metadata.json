@@ -1,0 +1,6 @@
+{
+  "name": "Your Roadster Portfolio",
+  "description": "Shaping the future of British Sports cars. Lighter, purer and with the driver at its heart.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

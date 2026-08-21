@@ -39,7 +39,8 @@ export default function GallerySection({ model, onOpenVideoPackager }: GallerySe
   const [portfolioItems, setPortfolioItems] = useState<HoverItem[]>([
     {
       id: "01",
-      title: "重点项目 - 全球D级皮卡HMI UI视觉设计策略",
+      title: "重点项目 - 全球 D 级皮卡智能座舱 HMI 体验与视觉策略",
+      subtitle: "面向越野、装载、露营与全球化复杂环境的座舱信息架构、交互策略与视觉系统定义",
       category: "GLOBAL PICKUP TRUCK / HMI UI STRATEGY",
       year: "2023 - 2025",
       imageSrc: "https://b4ca62ea3b5c48218ab14dbc609f2c16.gz5.agentos-app.net/Frame_1739333640.jpg",
@@ -71,14 +72,23 @@ export default function GallerySection({ model, onOpenVideoPackager }: GallerySe
     },
     {
       id: "05",
-      title: "概念项目 - PHUD整舱视觉概念设计",
-      category: "PANORAMIC HUD / CONCEPT DESIGN",
-      year: "2025 - 至今",
-      imageSrc: "https://b4ca62ea3b5c48218ab14dbc609f2c16.gz5.agentos-app.net/Frame_1739333644.jpg",
-      techs: ["PANORAMIC HUD", "AMBIENT SYNC", "AR PROJECTION", "CONCEPT"]
+      title: "AI概念产品 - HMI UI设计师提效工具思考",
+      subtitle: "探索生成式AI与Agent工作流在智能座舱HMI体验设计、资产生成与工程协同中的提效体系",
+      category: "AI CONCEPT / DESIGN EFFICIENCY TOOL",
+      year: "2024 - 至今",
+      imageSrc: "https://f75d3d355ae042e5960a8262010ed6b2.app.workbuddy.link/images/3.jpg",
+      techs: ["AI DESIGN COPILOT", "HMI WORKFLOW", "PROMPT ENGINEERING", "EFFICIENCY THINKING"]
     },
     {
       id: "06",
+      title: "概念项目 - PHUD整舱视觉概念设计",
+      category: "PANORAMIC HUD / CONCEPT DESIGN",
+      year: "2025 - 至今",
+      imageSrc: "https://b4ca62ea3b5c48218ab14dbc609f2c16.gz5.agentos-app.net/photo10.jpg",
+      techs: ["PANORAMIC HUD", "AMBIENT SYNC", "AR PROJECTION", "CONCEPT"]
+    },
+    {
+      id: "07",
       title: "概念项目 - 启源E0HMI UI视觉概念设计",
       category: "QIYUAN E0 / HMI UI CONCEPT",
       year: "2022 - 2025",
@@ -86,7 +96,7 @@ export default function GallerySection({ model, onOpenVideoPackager }: GallerySe
       techs: ["CONCEPT DESIGN", "HMI UI", "NEXT-GEN COCKPIT", "UI SYSTEM"]
     },
     {
-      id: "07",
+      id: "08",
       title: "实习项目 - 小鹏公众号广宣视频",
       category: "XPENG / PROMOTIONAL VIDEO",
       year: "2021",

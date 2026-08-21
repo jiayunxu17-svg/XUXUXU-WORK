@@ -53,6 +53,7 @@ export interface ReservationDetails {
 export interface ProjectExtendedDetails {
   id: string;
   title: string;
+  subtitle?: string;
   titleEn?: string;
   role?: string;
   category: string;

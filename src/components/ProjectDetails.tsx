@@ -76,9 +76,9 @@ const formatMediaUrl = (url: string | undefined | null) => {
 };
 
 const INITIAL_PICKUP_DETAIL_PAGES: DetailPageItem[] = [
-  { id: '01', title: '详情页 01 - 全球化D级皮卡智能座舱HMI视觉体系设计', type: 'image', image: PICKUP0Img || '/PICKUP0.jpg' },
+  { id: '01', title: '详情页 01 - 全球 D 级皮卡智能座舱 HMI 体验与视觉策略', type: 'image', image: 'https://f75d3d355ae042e5960a8262010ed6b2.app.workbuddy.link/images/2.jpg' },
   { id: '02', title: '详情页 02 - HMI 三维车控与底盘动态联动 (视频展面 01)', type: 'video', videoUrl: 'https://fe24cc531e24492595e3a36c2bf35416.bj8.agentos-app.net/video1.mp4', image: wireframeImg || '/pickup_wireframe_1784513853585.jpg' },
-  { id: '03', title: '详情页 03 - 越野多模态栅格与风格定义', type: 'image', image: brandGridImg || '/brand_ui_grid_1784513868767.jpg' },
+  { id: '03', title: '详情页 03 - 越野多模态栅格与风格定义', type: 'image', image: 'https://f75d3d355ae042e5960a8262010ed6b2.app.workbuddy.link/images/1.jpg' },
   { id: '04', title: '详情页 04 - 3D 全地形导航与环境渲染 (视频展面 02)', type: 'video', videoUrl: 'https://fe24cc531e24492595e3a36c2bf35416.bj8.agentos-app.net/video3.mp4', image: deepalMapImg || '/deepal_map_3d_1784513881612.jpg' },
   { id: '05', title: '详情页 05 - 亮点功能创意与交互状态', type: 'image', image: voiceStatesImg || '/voice_states_grid_1784513895504.jpg' },
 ];
@@ -94,7 +94,8 @@ const INITIAL_E07_DETAIL_PAGES: DetailPageItem[] = [
 const EXTENDED_DETAILS_MAP: Record<string, ProjectExtendedDetails> = {
   "01": {
     id: "01",
-    title: "重点项目-全球D级皮卡HMI UI视觉设计策略（2023-2025）",
+    title: "全球 D 级皮卡智能座舱 HMI 体验与视觉策略",
+    subtitle: "面向越野、装载、露营与全球化复杂环境的座舱信息架构、交互策略与视觉系统定义",
     titleEn: "GLOBAL D-CLASS PICKUP HMI UI VISUAL DESIGN STRATEGY",
     category: "GLOBAL PICKUP TRUCK / HMI UI STRATEGY",
     year: "2023–2025",
@@ -198,6 +199,34 @@ const EXTENDED_DETAILS_MAP: Record<string, ProjectExtendedDetails> = {
   },
   "05": {
     id: "05",
+    title: "AI概念产品- HMI UI设计师提效工具思考",
+    subtitle: "探索生成式AI与Agent工作流在智能座舱HMI体验设计、资产生成与工程协同中的提效体系",
+    titleEn: "AI CONCEPT - HMI UI DESIGNER EFFICIENCY TOOL THINKING",
+    category: "AI CONCEPT / DESIGN EFFICIENCY TOOL",
+    year: "2024-",
+    role: "AI 提效工具主导 / 前瞻设计与产品定义",
+    imageSrc: "https://f75d3d355ae042e5960a8262010ed6b2.app.workbuddy.link/images/3.jpg",
+    subImageSrc: "https://f75d3d355ae042e5960a8262010ed6b2.app.workbuddy.link/images/4.jpg",
+    techs: ["AI DESIGN COPILOT", "HMI WORKFLOW", "AGENTIC AI", "DESIGN SYSTEM AGENTS", "EFFICIENCY THINKING"],
+    backgroundIntro: "针对智能座舱 HMI UI 设计链路中长周期的资产产出、多规格适配及跨团队沟通瓶颈，主导探索 AI 赋能的座舱设计工作流工具体系，打通从创意脑暴、设计规范智能校验到 3D/2D 资产批量生成的提效闭环。",
+    dimensions: [
+      { title: "全流程座舱设计 Copilot", desc: "基于设计规范与车机尺寸标准，AI 智能推荐界面布局与层级架构，秒级生成多套风格探索方案。" },
+      { title: "3D/2D 资产与质感批量蒸馏", desc: "构建汽车专属 LoRA 与提示词知识库，实现仪表微动效、旋钮拟物光影与氛围灯材质的极速输出。" },
+      { title: "跨职能协同与规范智能走查", desc: "自动识别图层命名与设计走查规范，输出开发适配标注，人均月度节约工时超 50 小时。" }
+    ],
+    breakthroughs: [
+      "团队级座舱 AI 工作流平台搭建与实践落地，人均月均节省 50h+",
+      "基于车规级 UI DNA 的专属多模态生成式设计模型与提示词库",
+      "设计-开发全链路资产智能化切图与规范走查机制"
+    ],
+    designSystem: {
+      title: "未来智能体工场 (AI Agent Design System)",
+      detail: "融合电光紫与矩阵青的极客智感色彩体系，构建以人机共创为核心的高效生产力界面与数据流可视化架构。",
+      accent: "#8B5CF6"
+    }
+  },
+  "06": {
+    id: "06",
     title: "概念项目-PHUD整舱视觉概念设计（2025-）",
     titleEn: "PANORAMIC HUD COCKPIT VISUAL CONCEPT DESIGN",
     category: "PANORAMIC HUD / CONCEPT DESIGN",
@@ -223,8 +252,8 @@ const EXTENDED_DETAILS_MAP: Record<string, ProjectExtendedDetails> = {
       accent: "#FFB300"
     }
   },
-  "06": {
-    id: "06",
+  "07": {
+    id: "07",
     title: "概念项目-启源E0HMI UI视觉概念设计（2022-2025）",
     titleEn: "QIYUAN E0 HMI UI VISUAL CONCEPT DESIGN",
     category: "QIYUAN E0 / HMI UI CONCEPT",
@@ -250,8 +279,8 @@ const EXTENDED_DETAILS_MAP: Record<string, ProjectExtendedDetails> = {
       accent: "#9E80ED"
     }
   },
-  "07": {
-    id: "07",
+  "08": {
+    id: "08",
     title: "实习项目-小鹏公众号广宣视频（2021）",
     titleEn: "XPENG MOTORS OFFICIAL ACCOUNT PROMOTIONAL VIDEO",
     category: "XPENG / PROMOTIONAL VIDEO",
@@ -356,14 +385,14 @@ export default function ProjectDetails({ projectId, onClose, onNavigate }: Proje
 
   const handlePrev = () => {
     const currentNum = parseInt(projectId, 10);
-    const prevNum = currentNum === 1 ? 7 : currentNum - 1;
+    const prevNum = currentNum === 1 ? 8 : currentNum - 1;
     const prevId = prevNum.toString().padStart(2, '0');
     onNavigate(prevId);
   };
 
   const handleNext = () => {
     const currentNum = parseInt(projectId, 10);
-    const nextNum = currentNum === 7 ? 1 : currentNum + 1;
+    const nextNum = currentNum === 8 ? 1 : currentNum + 1;
     const nextId = nextNum.toString().padStart(2, '0');
     onNavigate(nextId);
   };
@@ -497,7 +526,7 @@ export default function ProjectDetails({ projectId, onClose, onNavigate }: Proje
 
         <div className="flex items-center gap-3 sm:gap-6">
           <span className="font-mono text-xs text-neutral-400 font-medium hidden sm:inline">
-            PROJECT {detail.id} / 07
+            PROJECT {detail.id} / 08
           </span>
           <div className="flex bg-neutral-900 border border-neutral-800 rounded-lg p-1">
             <button
@@ -564,7 +593,27 @@ export default function ProjectDetails({ projectId, onClose, onNavigate }: Proje
             />
           </div>
         </div>
-      ) : (detail.id === "05" || detail.title?.includes("PHUD")) ? (
+      ) : (detail.id === "05" || detail.title?.includes("AI概念产品") || detail.title?.includes("提效工具")) ? (
+        /* CLEAN FULL-SCREEN 2-IMAGE SHOWCASE FOR AI CONCEPT PRODUCT (05 AI概念产品 - HMI UI设计师提效工具思考) */
+        <div className="w-full relative pb-16 bg-black min-h-screen flex flex-col items-center justify-start gap-0">
+          <div className="w-full max-w-[1920px] mx-auto bg-black flex justify-center overflow-hidden">
+            <img
+              src="https://f75d3d355ae042e5960a8262010ed6b2.app.workbuddy.link/images/3.jpg"
+              alt="AI概念产品-HMI UI设计师提效工具思考-01"
+              referrerPolicy="no-referrer"
+              className="w-full h-auto object-contain max-w-[1920px] mx-auto block shadow-2xl"
+            />
+          </div>
+          <div className="w-full max-w-[1920px] mx-auto bg-black flex justify-center overflow-hidden">
+            <img
+              src="https://f75d3d355ae042e5960a8262010ed6b2.app.workbuddy.link/images/4.jpg"
+              alt="AI概念产品-HMI UI设计师提效工具思考-02"
+              referrerPolicy="no-referrer"
+              className="w-full h-auto object-contain max-w-[1920px] mx-auto block shadow-2xl"
+            />
+          </div>
+        </div>
+      ) : (detail.id === "06" || detail.title?.includes("PHUD")) ? (
         /* CLEAN 1920 IMAGE & VIDEO SHOWCASE FOR CONCEPT PROJECT - PHUD COCKPIT VISUAL CONCEPT DESIGN (概念项目-PHUD整舱视觉概念设计) */
         <div className="w-full relative pb-16 bg-black min-h-screen flex flex-col items-center justify-start gap-4">
           <div className="w-full max-w-[1920px] mx-auto bg-black flex justify-center overflow-hidden">
@@ -600,7 +649,7 @@ export default function ProjectDetails({ projectId, onClose, onNavigate }: Proje
             </div>
           </div>
         </div>
-      ) : (detail.id === "06" || detail.title?.includes("E0HMI") || detail.title?.includes("E0") || detail.title?.includes("启源") || detail.title?.includes("起源")) ? (
+      ) : (detail.id === "07" || detail.title?.includes("E0HMI") || detail.title?.includes("E0") || detail.title?.includes("启源") || detail.title?.includes("起源")) ? (
         /* CLEAN 2-PHOTO + VIDEO SHOWCASE FOR CONCEPT PROJECT - E0 HMI UI CONCEPT DESIGN (概念项目-E0HMI UI概念设计) */
         <div className="w-full relative pb-16 bg-black min-h-screen flex flex-col items-center justify-start gap-0">
           <div className="w-full max-w-[1920px] mx-auto bg-black flex justify-center overflow-hidden">
@@ -637,7 +686,7 @@ export default function ProjectDetails({ projectId, onClose, onNavigate }: Proje
             />
           </div>
         </div>
-      ) : (detail.id === "07" || detail.title?.includes("小鹏") || detail.title?.includes("XPENG")) ? (
+      ) : (detail.id === "08" || detail.title?.includes("小鹏") || detail.title?.includes("XPENG")) ? (
         /* CLEAN VIDEO SHOWCASE FOR XPENG PROMOTIONAL VIDEO (实习项目 - 小鹏公众号广宣视频) */
         <div className="w-full relative pb-16 bg-black min-h-screen flex flex-col items-center justify-start gap-4 px-4 sm:px-8">
           <div className="w-full max-w-[1920px] mx-auto pt-6 pb-2">
@@ -716,6 +765,11 @@ export default function ProjectDetails({ projectId, onClose, onNavigate }: Proje
                   <h1 className="font-display text-4xl sm:text-6xl md:text-7xl lg:text-8xl text-white tracking-wider uppercase font-extrabold leading-none select-text">
                     {detail.title}
                   </h1>
+                  {detail.subtitle && (
+                    <p className="font-sans text-base sm:text-lg text-neutral-300 font-normal leading-relaxed mt-3 select-text max-w-3xl">
+                      {detail.subtitle}
+                    </p>
+                  )}
                 </div>
 
                 <div className="relative group overflow-hidden border border-neutral-800/80 bg-neutral-950/70 p-6 md:p-8 backdrop-blur-xl rounded-lg max-w-2xl shadow-2xl">

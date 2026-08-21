@@ -9,6 +9,7 @@ import { Trash2 } from "lucide-react";
 
 export interface HoverItem {
   title: string;
+  subtitle?: string;
   category: string;
   id: string;
   imageSrc: string;
@@ -242,6 +243,11 @@ export default function HoverImageReveal({
                   >
                     {item.title}
                   </h3>
+                  {item.subtitle && (
+                    <p className="font-sans text-xs sm:text-sm text-neutral-400 font-normal tracking-wide">
+                      {item.subtitle}
+                    </p>
+                  )}
                   <div className="flex flex-wrap items-center gap-2 mt-0.5">
                     <span className="font-mono text-[11px] text-neutral-400 uppercase tracking-widest">
                       {item.category}

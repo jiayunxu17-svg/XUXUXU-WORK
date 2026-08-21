@@ -11,6 +11,7 @@ import {
 interface ProjectExtendedDetails {
   id: string;
   title: string;
+  subtitle?: string;
   titleEn?: string;
   role?: string;
   category: string;
@@ -724,9 +725,12 @@ export default function PickupDetailView({ detail, heroVideoUrl, onResetAll }: P
               GLOBAL PICKUP TRUCK / HMI UI DESIGN
             </span>
             <h1 className="font-display text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-white tracking-tight drop-shadow-2xl leading-tight">
-              {detail.title || "全球D级皮卡全新HMI UI设计"}
+              {detail.title || "全球 D 级皮卡智能座舱 HMI 体验与视觉策略"}
             </h1>
-            <p className="font-mono text-xs sm:text-sm md:text-base text-neutral-300 tracking-[0.25em] uppercase font-medium drop-shadow-lg">
+            <p className="font-sans text-sm sm:text-base md:text-lg text-neutral-200 tracking-normal font-normal drop-shadow-lg max-w-3xl mx-auto leading-relaxed">
+              {detail.subtitle || "面向越野、装载、露营与全球化复杂环境的座舱信息架构、交互策略与视觉系统定义"}
+            </p>
+            <p className="font-mono text-xs sm:text-sm md:text-base text-neutral-400 tracking-[0.25em] uppercase font-medium drop-shadow-lg">
               {detail.titleEn || "GLOBAL D-CLASS PICKUP ALL-NEW HMI UI DESIGN"}
             </p>
           </motion.div>
@@ -775,7 +779,7 @@ export default function PickupDetailView({ detail, heroVideoUrl, onResetAll }: P
           {[
             {
               type: 'image',
-              url: 'https://537a055e300844d9b462001bad8e9fd2.bj8.agentos-app.net/1685642269.jpg'
+              url: 'https://f75d3d355ae042e5960a8262010ed6b2.app.workbuddy.link/images/2.jpg'
             },
             {
               type: 'video',
@@ -783,7 +787,7 @@ export default function PickupDetailView({ detail, heroVideoUrl, onResetAll }: P
             },
             {
               type: 'image',
-              url: 'https://537a055e300844d9b462001bad8e9fd2.bj8.agentos-app.net/1685642275.jpg'
+              url: 'https://f75d3d355ae042e5960a8262010ed6b2.app.workbuddy.link/images/1.jpg'
             },
             {
               type: 'video',

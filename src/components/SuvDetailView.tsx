@@ -97,22 +97,22 @@ export const SuvDetailView: React.FC<SuvDetailViewProps> = () => {
       {/* ------------------------------------------------------------- */}
       {/* 2. FULL-WIDTH TILED IMAGE SECTION                             */}
       {/* ------------------------------------------------------------- */}
-      <div className="w-full relative pb-16 bg-black flex flex-col items-center justify-start space-y-6 pt-16">
-        {/* 2.0 UI 1 */}
+      <div className="w-full relative pb-16 bg-black flex flex-col items-center justify-start space-y-0 pt-0">
+        {/* UI Image 1 */}
         <div className="w-full max-w-[1920px] mx-auto bg-black flex justify-center overflow-hidden">
           <img
-            src="https://b4ca62ea3b5c48218ab14dbc609f2c16.gz5.agentos-app.net/photo9.jpg"
-            alt="SUV旗舰车型 2.0 UI 策略展示 1"
+            src="https://1a69dfb767c44501b01b9619712e8bfb.app.workbuddy.link/images/2.jpg"
+            alt="SUV旗舰车型UI设计视觉迭代策略 - 01"
             referrerPolicy="no-referrer"
             className="w-full h-auto object-contain max-w-[1920px] mx-auto block shadow-2xl"
           />
         </div>
 
-        {/* 2.0 UI 2 */}
+        {/* UI Image 2 */}
         <div className="w-full max-w-[1920px] mx-auto bg-black flex justify-center overflow-hidden">
           <img
-            src="https://b4ca62ea3b5c48218ab14dbc609f2c16.gz5.agentos-app.net/photo8.jpg"
-            alt="SUV旗舰车型 2.0 UI 策略展示 2"
+            src="https://1a69dfb767c44501b01b9619712e8bfb.app.workbuddy.link/images/1.jpg"
+            alt="SUV旗舰车型UI设计视觉迭代策略 - 02"
             referrerPolicy="no-referrer"
             className="w-full h-auto object-contain max-w-[1920px] mx-auto block shadow-2xl"
           />

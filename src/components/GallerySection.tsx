@@ -51,7 +51,7 @@ export default function GallerySection({ model, onOpenVideoPackager }: GallerySe
       title: "重点项目 - SUV旗舰车型UI设计视觉迭代策略",
       category: "FLAGSHIP SUV / UI ITERATION STRATEGY",
       year: "2024 - 至今",
-      imageSrc: "https://b4ca62ea3b5c48218ab14dbc609f2c16.gz5.agentos-app.net/Frame_1739333642.jpg",
+      imageSrc: "https://1a69dfb767c44501b01b9619712e8bfb.app.workbuddy.link/images/2.jpg",
       techs: ["FLAGSHIP SUV", "UI ITERATION", "DIGITAL COCKPIT", "DESIGN SYSTEM"]
     },
     {

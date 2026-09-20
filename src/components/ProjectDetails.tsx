@@ -233,7 +233,7 @@ const EXTENDED_DETAILS_MAP: Record<string, ProjectExtendedDetails> = {
     year: "2025-",
     role: "前瞻UI概念设计专家",
     imageSrc: PHUD1Img || "/PHUD1.jpg",
-    subImageSrc: phudOverlayImg || "/phud_hud_overlay_1784513910409.jpg",
+    subImageSrc: "https://phud-emotion-longpage.app.workbuddy.host/page-3200.jpg",
     techs: ["PANORAMIC HUD", "AMBIENT SYNC", "AR PROJECTION", "CONCEPT"],
     backgroundIntro: "前瞻性五感交互先锋概念研究。打破传统仅显示时速的HUD天花板，在全挡风玻璃上投影自适应AR驾驶轨迹，联动全车32路全光谱氛围灯与座椅振动。",
     dimensions: [
@@ -647,6 +647,18 @@ export default function ProjectDetails({ projectId, onClose, onNavigate }: Proje
                 allow="autoplay; fullscreen"
               />
             </div>
+          </div>
+
+          {/* PHUD EMOTIONAL LONGPAGE DESIGN IMAGE (https://phud-emotion-longpage.app.workbuddy.host/) */}
+          <div className="w-full max-w-[1920px] mx-auto bg-black flex justify-center overflow-hidden mt-4">
+            <img
+              src="https://phud-emotion-longpage.app.workbuddy.host/page-3200.jpg"
+              srcSet="https://phud-emotion-longpage.app.workbuddy.host/page-1600.jpg 1600w, https://phud-emotion-longpage.app.workbuddy.host/page-3200.jpg 3200w, https://phud-emotion-longpage.app.workbuddy.host/page-4800.jpg 4800w"
+              sizes="100vw"
+              alt="概念项目-PHUD整舱视觉概念设计 - 情绪定位设计长图"
+              referrerPolicy="no-referrer"
+              className="w-full h-auto object-contain max-w-[1920px] mx-auto block shadow-2xl"
+            />
           </div>
         </div>
       ) : (detail.id === "07" || detail.title?.includes("E0HMI") || detail.title?.includes("E0") || detail.title?.includes("启源") || detail.title?.includes("起源")) ? (

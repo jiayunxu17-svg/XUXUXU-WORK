@@ -779,7 +779,7 @@ export default function PickupDetailView({ detail, heroVideoUrl, onResetAll }: P
           {[
             {
               type: 'image',
-              url: 'https://f75d3d355ae042e5960a8262010ed6b2.app.workbuddy.link/images/2.jpg'
+              url: 'https://x0.at/UGO5.jpg'
             },
             {
               type: 'video',
@@ -787,11 +787,11 @@ export default function PickupDetailView({ detail, heroVideoUrl, onResetAll }: P
             },
             {
               type: 'image',
-              url: 'https://f75d3d355ae042e5960a8262010ed6b2.app.workbuddy.link/images/1.jpg'
+              url: 'https://x0.at/3IiZ.jpg'
             },
             {
               type: 'video',
-              url: 'https://a566e28db74b41bebfdfab6ad1c9bbff.gz2.agentos-app.net/video3.mp4'
+              url: 'https://x0.at/yWWf.mp4'
             },
             {
               type: 'image',

@@ -101,7 +101,7 @@ export const SuvDetailView: React.FC<SuvDetailViewProps> = () => {
         {/* UI Image 1 */}
         <div className="w-full max-w-[1920px] mx-auto bg-black flex justify-center overflow-hidden">
           <img
-            src="https://1a69dfb767c44501b01b9619712e8bfb.app.workbuddy.link/images/2.jpg"
+            src="https://x0.at/nZDWu.jpg"
             alt="SUV旗舰车型UI设计视觉迭代策略 - 01"
             referrerPolicy="no-referrer"
             className="w-full h-auto object-contain max-w-[1920px] mx-auto block shadow-2xl"
@@ -111,11 +111,36 @@ export const SuvDetailView: React.FC<SuvDetailViewProps> = () => {
         {/* UI Image 2 */}
         <div className="w-full max-w-[1920px] mx-auto bg-black flex justify-center overflow-hidden">
           <img
-            src="https://1a69dfb767c44501b01b9619712e8bfb.app.workbuddy.link/images/1.jpg"
+            src="https://x0.at/iGyL.jpg"
             alt="SUV旗舰车型UI设计视觉迭代策略 - 02"
             referrerPolicy="no-referrer"
             className="w-full h-auto object-contain max-w-[1920px] mx-auto block shadow-2xl"
           />
+        </div>
+
+        {/* UI Image 3 */}
+        <div className="w-full max-w-[1920px] mx-auto bg-black flex justify-center overflow-hidden">
+          <img
+            src="https://x0.at/mmEh.jpg"
+            alt="SUV旗舰车型UI设计视觉迭代策略 - 03"
+            referrerPolicy="no-referrer"
+            className="w-full h-auto object-contain max-w-[1920px] mx-auto block shadow-2xl"
+          />
+        </div>
+
+        {/* UI Video Showcase */}
+        <div className="w-full max-w-[1920px] mx-auto bg-black flex justify-center overflow-hidden mt-4">
+          <video
+            src="https://x0.at/RVFx.mp4"
+            autoPlay
+            loop
+            muted
+            playsInline
+            controls
+            className="w-full h-auto max-h-[85vh] object-contain max-w-[1920px] mx-auto block shadow-2xl"
+          >
+            <source src="https://x0.at/RVFx.mp4" type="video/mp4" />
+          </video>
         </div>
       </div>
 

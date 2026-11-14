@@ -51,7 +51,7 @@ export default function GallerySection({ model, onOpenVideoPackager }: GallerySe
       title: "重点项目 - SUV旗舰车型UI设计视觉迭代策略",
       category: "FLAGSHIP SUV / UI ITERATION STRATEGY",
       year: "2024 - 至今",
-      imageSrc: "https://1a69dfb767c44501b01b9619712e8bfb.app.workbuddy.link/images/2.jpg",
+      imageSrc: "https://x0.at/nZDWu.jpg",
       techs: ["FLAGSHIP SUV", "UI ITERATION", "DIGITAL COCKPIT", "DESIGN SYSTEM"]
     },
     {
@@ -76,7 +76,7 @@ export default function GallerySection({ model, onOpenVideoPackager }: GallerySe
       subtitle: "探索生成式AI与Agent工作流在智能座舱HMI体验设计、资产生成与工程协同中的提效体系",
       category: "AI CONCEPT / DESIGN EFFICIENCY TOOL",
       year: "2024 - 至今",
-      imageSrc: "https://f75d3d355ae042e5960a8262010ed6b2.app.workbuddy.link/images/3.jpg",
+      imageSrc: "https://x0.at/wMdR.jpg",
       techs: ["AI DESIGN COPILOT", "HMI WORKFLOW", "PROMPT ENGINEERING", "EFFICIENCY THINKING"]
     },
     {

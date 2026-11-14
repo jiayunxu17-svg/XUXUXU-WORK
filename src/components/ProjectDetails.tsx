@@ -76,10 +76,10 @@ const formatMediaUrl = (url: string | undefined | null) => {
 };
 
 const INITIAL_PICKUP_DETAIL_PAGES: DetailPageItem[] = [
-  { id: '01', title: '详情页 01 - 全球 D 级皮卡智能座舱 HMI 体验与视觉策略', type: 'image', image: 'https://f75d3d355ae042e5960a8262010ed6b2.app.workbuddy.link/images/2.jpg' },
+  { id: '01', title: '详情页 01 - 全球 D 级皮卡智能座舱 HMI 体验与视觉策略', type: 'image', image: 'https://x0.at/UGO5.jpg' },
   { id: '02', title: '详情页 02 - HMI 三维车控与底盘动态联动 (视频展面 01)', type: 'video', videoUrl: 'https://fe24cc531e24492595e3a36c2bf35416.bj8.agentos-app.net/video1.mp4', image: wireframeImg || '/pickup_wireframe_1784513853585.jpg' },
-  { id: '03', title: '详情页 03 - 越野多模态栅格与风格定义', type: 'image', image: 'https://f75d3d355ae042e5960a8262010ed6b2.app.workbuddy.link/images/1.jpg' },
-  { id: '04', title: '详情页 04 - 3D 全地形导航与环境渲染 (视频展面 02)', type: 'video', videoUrl: 'https://fe24cc531e24492595e3a36c2bf35416.bj8.agentos-app.net/video3.mp4', image: deepalMapImg || '/deepal_map_3d_1784513881612.jpg' },
+  { id: '03', title: '详情页 03 - 越野多模态栅格与风格定义', type: 'image', image: 'https://x0.at/3IiZ.jpg' },
+  { id: '04', title: '详情页 04 - 3D 全地形导航与环境渲染 (视频展面 02)', type: 'video', videoUrl: 'https://x0.at/yWWf.mp4', image: deepalMapImg || '/deepal_map_3d_1784513881612.jpg' },
   { id: '05', title: '详情页 05 - 亮点功能创意与交互状态', type: 'image', image: voiceStatesImg || '/voice_states_grid_1784513895504.jpg' },
 ];
 
@@ -127,8 +127,8 @@ const EXTENDED_DETAILS_MAP: Record<string, ProjectExtendedDetails> = {
     category: "FLAGSHIP SUV / UI ITERATION STRATEGY",
     year: "2024-",
     role: "主设 / 视觉设计专家",
-    imageSrc: "https://1a69dfb767c44501b01b9619712e8bfb.app.workbuddy.link/images/2.jpg",
-    subImageSrc: "https://1a69dfb767c44501b01b9619712e8bfb.app.workbuddy.link/images/1.jpg",
+    imageSrc: "https://x0.at/nZDWu.jpg",
+    subImageSrc: "https://x0.at/iGyL.jpg",
     techs: ["FLAGSHIP SUV", "UI ITERATION", "DIGITAL COCKPIT", "DESIGN SYSTEM"],
     backgroundIntro: "传统燃油车屏幕大换代，打通前瞻科技和传统美学的界限，定义新一代SUV智驾交互新美学",
     dimensions: [],
@@ -205,8 +205,8 @@ const EXTENDED_DETAILS_MAP: Record<string, ProjectExtendedDetails> = {
     category: "AI CONCEPT / DESIGN EFFICIENCY TOOL",
     year: "2024-",
     role: "AI 提效工具主导 / 前瞻设计与产品定义",
-    imageSrc: "https://f75d3d355ae042e5960a8262010ed6b2.app.workbuddy.link/images/3.jpg",
-    subImageSrc: "https://f75d3d355ae042e5960a8262010ed6b2.app.workbuddy.link/images/4.jpg",
+    imageSrc: "https://x0.at/wMdR.jpg",
+    subImageSrc: "https://x0.at/wMdR.jpg",
     techs: ["AI DESIGN COPILOT", "HMI WORKFLOW", "AGENTIC AI", "DESIGN SYSTEM AGENTS", "EFFICIENCY THINKING"],
     backgroundIntro: "针对智能座舱 HMI UI 设计链路中长周期的资产产出、多规格适配及跨团队沟通瓶颈，主导探索 AI 赋能的座舱设计工作流工具体系，打通从创意脑暴、设计规范智能校验到 3D/2D 资产批量生成的提效闭环。",
     dimensions: [
@@ -233,7 +233,7 @@ const EXTENDED_DETAILS_MAP: Record<string, ProjectExtendedDetails> = {
     year: "2025-",
     role: "前瞻UI概念设计专家",
     imageSrc: PHUD1Img || "/PHUD1.jpg",
-    subImageSrc: "https://phud-emotion-longpage.app.workbuddy.host/page-3200.jpg",
+    subImageSrc: "https://x0.at/ZhRm.jpg",
     techs: ["PANORAMIC HUD", "AMBIENT SYNC", "AR PROJECTION", "CONCEPT"],
     backgroundIntro: "前瞻性五感交互先锋概念研究。打破传统仅显示时速的HUD天花板，在全挡风玻璃上投影自适应AR驾驶轨迹，联动全车32路全光谱氛围灯与座椅振动。",
     dimensions: [
@@ -594,20 +594,12 @@ export default function ProjectDetails({ projectId, onClose, onNavigate }: Proje
           </div>
         </div>
       ) : (detail.id === "05" || detail.title?.includes("AI概念产品") || detail.title?.includes("提效工具")) ? (
-        /* CLEAN FULL-SCREEN 2-IMAGE SHOWCASE FOR AI CONCEPT PRODUCT (05 AI概念产品 - HMI UI设计师提效工具思考) */
+        /* CLEAN FULL-SCREEN IMAGE SHOWCASE FOR AI CONCEPT PRODUCT (05 AI概念产品 - HMI UI设计师提效工具思考) */
         <div className="w-full relative pb-16 bg-black min-h-screen flex flex-col items-center justify-start gap-0">
           <div className="w-full max-w-[1920px] mx-auto bg-black flex justify-center overflow-hidden">
             <img
-              src="https://f75d3d355ae042e5960a8262010ed6b2.app.workbuddy.link/images/3.jpg"
-              alt="AI概念产品-HMI UI设计师提效工具思考-01"
-              referrerPolicy="no-referrer"
-              className="w-full h-auto object-contain max-w-[1920px] mx-auto block shadow-2xl"
-            />
-          </div>
-          <div className="w-full max-w-[1920px] mx-auto bg-black flex justify-center overflow-hidden">
-            <img
-              src="https://f75d3d355ae042e5960a8262010ed6b2.app.workbuddy.link/images/4.jpg"
-              alt="AI概念产品-HMI UI设计师提效工具思考-02"
+              src="https://x0.at/wMdR.jpg"
+              alt="AI概念产品-HMI UI设计师提效工具思考"
               referrerPolicy="no-referrer"
               className="w-full h-auto object-contain max-w-[1920px] mx-auto block shadow-2xl"
             />
@@ -649,12 +641,10 @@ export default function ProjectDetails({ projectId, onClose, onNavigate }: Proje
             </div>
           </div>
 
-          {/* PHUD EMOTIONAL LONGPAGE DESIGN IMAGE (https://phud-emotion-longpage.app.workbuddy.host/) */}
+          {/* PHUD EMOTIONAL LONGPAGE DESIGN IMAGE */}
           <div className="w-full max-w-[1920px] mx-auto bg-black flex justify-center overflow-hidden mt-4">
             <img
-              src="https://phud-emotion-longpage.app.workbuddy.host/page-3200.jpg"
-              srcSet="https://phud-emotion-longpage.app.workbuddy.host/page-1600.jpg 1600w, https://phud-emotion-longpage.app.workbuddy.host/page-3200.jpg 3200w, https://phud-emotion-longpage.app.workbuddy.host/page-4800.jpg 4800w"
-              sizes="100vw"
+              src="https://x0.at/ZhRm.jpg"
               alt="概念项目-PHUD整舱视觉概念设计 - 情绪定位设计长图"
               referrerPolicy="no-referrer"
               className="w-full h-auto object-contain max-w-[1920px] mx-auto block shadow-2xl"

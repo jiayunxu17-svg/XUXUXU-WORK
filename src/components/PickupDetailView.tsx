@@ -783,7 +783,7 @@ export default function PickupDetailView({ detail, heroVideoUrl, onResetAll }: P
             },
             {
               type: 'video',
-              url: 'https://a566e28db74b41bebfdfab6ad1c9bbff.gz2.agentos-app.net/video1.mp4'
+              url: 'https://x0.at/yWWf.mp4'
             },
             {
               type: 'image',
@@ -791,7 +791,7 @@ export default function PickupDetailView({ detail, heroVideoUrl, onResetAll }: P
             },
             {
               type: 'video',
-              url: 'https://x0.at/yWWf.mp4'
+              url: 'https://x0.at/ZAKh.mp4'
             },
             {
               type: 'image',

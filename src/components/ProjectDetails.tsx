@@ -77,9 +77,9 @@ const formatMediaUrl = (url: string | undefined | null) => {
 
 const INITIAL_PICKUP_DETAIL_PAGES: DetailPageItem[] = [
   { id: '01', title: '详情页 01 - 全球 D 级皮卡智能座舱 HMI 体验与视觉策略', type: 'image', image: 'https://x0.at/UGO5.jpg' },
-  { id: '02', title: '详情页 02 - HMI 三维车控与底盘动态联动 (视频展面 01)', type: 'video', videoUrl: 'https://fe24cc531e24492595e3a36c2bf35416.bj8.agentos-app.net/video1.mp4', image: wireframeImg || '/pickup_wireframe_1784513853585.jpg' },
+  { id: '02', title: '详情页 02 - HMI 三维车控与底盘动态联动 (视频展面 01)', type: 'video', videoUrl: 'https://x0.at/yWWf.mp4', image: wireframeImg || '/pickup_wireframe_1784513853585.jpg' },
   { id: '03', title: '详情页 03 - 越野多模态栅格与风格定义', type: 'image', image: 'https://x0.at/3IiZ.jpg' },
-  { id: '04', title: '详情页 04 - 3D 全地形导航与环境渲染 (视频展面 02)', type: 'video', videoUrl: 'https://x0.at/yWWf.mp4', image: deepalMapImg || '/deepal_map_3d_1784513881612.jpg' },
+  { id: '04', title: '详情页 04 - 3D 全地形导航与环境渲染 (视频展面 02)', type: 'video', videoUrl: 'https://x0.at/ZAKh.mp4', image: deepalMapImg || '/deepal_map_3d_1784513881612.jpg' },
   { id: '05', title: '详情页 05 - 亮点功能创意与交互状态', type: 'image', image: voiceStatesImg || '/voice_states_grid_1784513895504.jpg' },
 ];
 
